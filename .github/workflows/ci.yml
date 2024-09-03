@@ -87,7 +87,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Download test coverage
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: cover-${{ matrix.ostype }}
     - name: Upload coverage to codecov
